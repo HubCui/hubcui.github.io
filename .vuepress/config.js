@@ -10,19 +10,19 @@ module.exports = {
   // permalink: "/:regular",//永久链接
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
-      { text: 'Docs', 
+      { text: '首页', link: '/', icon: 'reco-home' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+      { text: '文档', 
         icon: 'reco-message',
         items: [
           { text: 'vuepress手册', link: '/docs/vuepress/' },
           { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-coding' }
         ]
       },
-      { text: 'Contact', 
-        icon: 'reco-message',
+      { text: '关于', 
+        icon: 'reco-menu',
         items: [
-          { text: 'GitHub', link: 'https://github.com/c164660339', icon: 'reco-github' }
+          { text: 'GitHub', link: 'https://github.com/HubCui', icon: 'reco-github' }
         ]
       }
     ],
@@ -39,11 +39,11 @@ module.exports = {
     blogConfig: {
       category: {
         location: 2, // 在导航栏菜单中所占的位置，默认2
-        text: 'Category' // 默认 “分类”
+        text: '分类' // 默认 “分类”
       },
       tag: {
         location: 3, // 在导航栏菜单中所占的位置，默认3
-        text: 'Tag' // 默认 “标签”
+        text: '标签' // 默认 “标签”
       }
     },
     friendLink: [
@@ -72,12 +72,12 @@ module.exports = {
     // 作者
     author: 'HubCui',
     // 作者头像
-    authorAvatar: 'https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/img/avatar.jpg',
+    authorAvatar: 'https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/img/avatar.jpg',
     // 备案号
-    record: 'ICP 备案文案',
-    recordLink: 'ICP 备案指向链接',
-    cyberSecurityRecord: '公安部备案文案',
-    cyberSecurityLink: '公安部备案指向链接',
+    // record: 'ICP 备案文案',
+    // recordLink: 'ICP 备案指向链接',
+    // cyberSecurityRecord: '公安部备案文案',
+    // cyberSecurityLink: '公安部备案指向链接',
     // 项目开始时间
     startYear: '2020',
     // 关闭404 腾讯公益页面
@@ -96,10 +96,10 @@ module.exports = {
      * valine 设置 (if you need valine comment )
      */
 
-    // valineConfig: {
-    //   appId: '...',// your appId
-    //   appKey: '...', // your appKey
-    // }
+    valineConfig: {
+      appId: 'otJJhc55ebLXYnS0mbwCMNWc-gzGzoHsz',// your appId
+      appKey: 'u7N63cPLce0li79HJPpYO45T', // your appKey
+    }
   },
   markdown: {
     lineNumbers: true

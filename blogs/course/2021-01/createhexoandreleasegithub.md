@@ -25,14 +25,14 @@ tags:
 安装步骤：双击下载好的exe文件，一路next就好。
 查看版本：
 `git --version`
-![查看git版本](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/gitversion.png "查看git版本")
+![查看git版本](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/gitversion.png "查看git版本")
 ### [Node.js下载](https://nodejs.org/en/download/)
 选择LTS版本就行了。
 安装步骤：双击打开安装，也是一路next，不过在Custom Setup这一步记得选 `Add to PATH` ,这样就可以不用自己去配置电脑上环境变量是否配置。
 查看版本：
 `node -v`
 `npm -v`
-![查看node版本](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/node-v.png "查看node版本")
+![查看node版本](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/node-v.png "查看node版本")
 
 ## 安装Hexo
 前面git和nodejs安装好后，就可以安装hexo了。
@@ -40,7 +40,7 @@ tags:
 `npm install -g hexo-cli`
 2. 用命令查看一下版本(如图表示安装成功)：
 `hexo -v`
-![查看hexo版本](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/hexo-v.png "查看hexo版本")
+![查看hexo版本](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/hexo-v.png "查看hexo版本")
 3. 接下来初始化hexo(blog改用什么名字都可以)：
 `hexo init blog`
 4. 进入文件夹并安装依赖：
@@ -67,20 +67,20 @@ tags:
 
 ### 创建仓库
 创建名称为`xxx.github.io`的仓库，其中xxx是你的github账号用户名，一定按照这个命名规则将部署到GitHub page的时候，才会被识别，如下图：
-![创建仓库](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/create-repo.png "创建仓库")
+![创建仓库](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/create-repo.png "创建仓库")
 
 ### 配置GitHub
 在gitbash中依次输入GitHub的用户名和GitHub的邮箱：
-![username](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/username.png "配置GitHub用户名")
-![email](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/email.png "配置GitHub邮箱")
+![username](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/username.png "配置GitHub用户名")
+![email](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/email.png "配置GitHub邮箱")
 
 ### 创建SSH
 1. 在gitbash中输入`ssh-keygen -t rsa -C "youremail"`生成ssh。一路回车,这个时候它会告诉你已经生成了.ssh的文件夹。在你的电脑中找到这个文件夹。
 id_rsa.pub是公共秘钥
 2. 将上面获取的ssh放到github中：
 添加一个 [SSH key] ，title随便取，key就填id_rsa.pub里的内容。
-![打开设置](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/settings.png "打开settings")
-![SSH](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/ssh-key.png "添加SSH key")
+![打开设置](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/settings.png "打开settings")
+![SSH](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/ssh-key.png "添加SSH key")
 3. 在gitbash中输入`ssh -T git@github.com`验证是否添加成功。
 
 ### 修改Hexo配置文件
@@ -99,7 +99,7 @@ id_rsa.pub是公共秘钥
 `hexo g` *生成静态文件*
 `hexo d` *部署文件*
 推送的过程中可能要输入你的username及passward。如下：
-![部署到GitHub](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-01/deploy.png "部署到GitHub")
+![部署到GitHub](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-01/deploy.png "部署到GitHub")
 3. 在浏览器中输入`http://yourgithubname.github.io`就可以看到你的个人博客啦(yourgithubname是仓库名),如果无法显示多等一会就行，会有一定延迟。
 
 # 总结

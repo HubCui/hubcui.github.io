@@ -1,8 +1,3 @@
-#!/usr/bin/env sh
-
-# 确保脚本抛出遇到的错误
-# set -e
-
 # 生成静态文件
 yarn run build
 
@@ -23,4 +18,6 @@ git push -f git@github.com:HubCui/hubcui.github.io.git main
 # git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
 
 cd ../ 
+# 删除需要删除的文件
 rm -rf public
+rm -rf .temp

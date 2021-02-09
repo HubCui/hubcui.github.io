@@ -76,7 +76,7 @@ yarn install
 也可以给文章添加摘要<br/>
 **效果：**
 
-![第一篇文章](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-02/oneposts.png "第一篇文章")
+![第一篇文章](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/oneposts.png "第一篇文章")
 
 ## 使用插件
 reco文档里面还有个插件市场，提供非常多的[插件](https://vuepress-theme-reco.recoluan.com/views/other/recommend.html)，我们举一个看板娘的例子
@@ -109,17 +109,17 @@ module.exports = {
 ```
 重启项目可以看到效果：
 
-![插件](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-02/pluginscat.png "插件")
+![插件](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/pluginscat.png "插件")
 
 ## 部署到GitHub
 
 本次主要讲的是部署到GitHub提供的GitPage,首先创建一个 `仓库`，如果你的仓库名为 `用户名.github.io`你就不用再vuepress中做任何修改，如果不为这个名称，你就需要在`config.js`中配置 `base` 属性为你的仓库名。
 
-![创建仓库](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2021-02/huangjiancangku.png "创建仓库")
+![创建仓库](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/huangjiancangku.png "创建仓库")
 
-创建完成后，将项目克隆到本地，将刚刚写的代码复制过来，这里有个问题，如果你想部署博客的同时也将博客代码同步到git的话，可以通过新建一个分支或者专门存放代码的仓库
+创建完成后，将项目克隆到本地，将刚刚写的代码复制过来，这里有个问题，如果你想部署博客的同时也将博客代码同步到git的话，可以通过新建一个分支或者专门存放代码的仓库。
 
-编写`.gitignore`文件
+编写`.gitignore`文件：
 
 ```
 node_modules/
@@ -128,26 +128,40 @@ package-lock.json
 public/
 ```
 
-新建两个脚本，一个用来push博客页面，一个用来push博客源码
+新建两个脚本，一个用来push博客html页面，一个用来push博客源码:
 
-`deploy.sh`用来打包博客，并将打包完成的页面文件推送到我们的仓库
+`deploy.sh`用来打包博客，并将打包完成的页面文件推送到我们的仓库。
 
 ```
-npm run build
+# 生成静态文件
+yarn run build
 
+# 进入生成的文件夹
 cd public
+
+# 如果是发布到自定义域名
+# echo 'www.yourwebsite.com' > CNAME
 
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'myblog'
 
-git push -f git@github.com:hubcui/hubcui.github.io.git main
+# 如果你想要部署到 https://USERNAME.github.io
+git push -f git@github.com:HubCui/hubcui.github.io.git main
 
-cd ../
+# 如果发布到 https://USERNAME.github.io/<REPO>  REPO=github上的项目
+# git push -f git@github.com:USERNAME/<REPO>.git master:gh-pages
+
+cd ../ 
+# 删除需要删除的文件
 rm -rf public
+# rm -rf .temp
 ```
 
-`push.sh`用来推送博客源码文件
+现在我们打开https://hubcui.github.io页面便可看到效果。
+
+**可选：**<br/>
+`push.sh`用来推送源码备份：
 
 ```
 git add .
@@ -155,4 +169,12 @@ git commit -m 'push'
 git push origin blogcode
 ```
 
-双击运行 `deploy.sh`以后，我们打开https://hubcui.github.io页面便可看到效果
+如遇到不能直接推送源码的情况：
+在根目录右键打开`GITbash`手动按顺序执行以下命令,以后可知直接双击`push.sh`文件推送源码。
+
+```
+git init
+git add -A
+git commit -m 'push'
+git push -f git@github.com:HubCui/hubcui.github.io.git blogcode
+```

@@ -57,7 +57,7 @@ tags:
 ###### 这是六级标题
 ```
 - 效果：
-![标题](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2020-12/title.png "标题")
+![标题](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2020-12/title.png "标题")
 
 ### 列表
 
@@ -170,15 +170,15 @@ $(document).ready(function () {
     `title`是图片的标题，当鼠标移到图片上时显示的内容。（标题为可选）
 - 示例1：
 ```
-![示例图片](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2020-12/settings.png "示例图片")
+![示例图片](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2020-12/settings.png "示例图片")
 ```
 Markdown语法没有办法指定图片的高度与宽度，如果需要的话，可以使用普通的 `<img>` 标签。
 - 示例2：
 ```
-<img src="https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2020-12/settings.png" width="20%">
+<img src="https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2020-12/settings.png" width="20%">
 ```
 - 效果：
-![示例图片1](https://cdn.jsdelivr.net/gh/c164660339/CDN@main/blog/posts/2020-12/settings.png "示例图片2")
+![示例图片1](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2020-12/settings.png "示例图片2")
 
 ### 表格
 Markdown 有两种制作表格的方式：
