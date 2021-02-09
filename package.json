@@ -1,0 +1,14 @@
+{
+  "name": "hubcuiblog",
+  "version": "1.0.0",
+  "author": "HubCui",
+  "scripts": {
+    "dev": "vuepress dev . --temp .temp",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "1.7.1",
+    "vuepress-theme-reco": "1.6.1"
+  },
+  "description": "myblog"
+}
