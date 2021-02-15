@@ -16,8 +16,8 @@ tags:
 
 &emsp; &emsp;另外我用的主题尽管经过简单魔改后页面非常好看了，还是被说样式过时了……哈哈哈，不过这更坚定了我换`Vuepress`的决定。放个图记录一下^.^
 
-![hexo图1](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/hexohome.png "hexo图1")
-![hexo图2](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/hexoimg.png "hexo图2")
+![hexo图1](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/hexohome.jpg "hexo图1")
+![hexo图2](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/posts/2021-02/hexoimg.jpg "hexo图2")
 
 ## 新域名
 新域名改用腾讯云上注册了，因为腾讯云注册.com域名5.5折相当于半价，虽然已经是老用户了，还能享受半价续费，良心云优惠力度还是非常可以的。

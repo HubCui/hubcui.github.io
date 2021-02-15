@@ -1,30 +1,31 @@
 //标签样式
 .tags .tag-item{
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    min-width: 1.5em;
-    margin: 0 0.2em;
-    padding: 0 0.2em;
-    border-width: 0.5px;
-    border-style: solid;
-    border-radius: 0.6em;
-    background: #f8f8f8;
-    font-size: 0.6em;
-    text-align: center;
-    overflow: hidden;
-    transition: all .2s;
+    display: inline-block !important;
+    position: relative !important;
+    vertical-align: middle !important;
+    min-width: 1.5em !important;
+    margin: 0 0.8em !important;
+    padding: 0 0.5em !important;
+    border-width: 0.5px !important;
+    border-style: solid !important;
+    border-radius: 0.6em !important;
+    background: #f8f8f8 !important;
+    font-size: 0.6em !important;
+    text-align: center !important;
+    overflow: hidden !important;
+    transition: all .2s !important;
 }
-.iconfont[data-v-8557f27a] {
-    display: inline-block;
+.iconfont{
+    display: inline-block !important;
     line-height: 1rem !important;
+    font-size: 13px !important;
 }
 
 // 侧边栏样式
 // 左侧侧边栏标题
 .sidebar > .sidebar-links > li > a.sidebar-link {
-  margin-left: -0.5em;
-  padding: 2px 16px 2px 36px;
+  margin-left: -0.5em !important;
+  padding: 2px 16px 2px 36px !important;
 }
 .sidebar > .sidebar-links > li > a.sidebar-link.active {
     font-size: 1.1em ;
@@ -36,7 +37,7 @@ a.sidebar-link {
     line-height: 1.6 !important;
 }
 .level-2 a.sidebar-link {
-    font-weight:bold;
+    font-weight:bold !important;
 }
 .sub-sidebar-wrapper li a{
     padding: 0.1rem 0 !important;
@@ -45,4 +46,31 @@ a.sidebar-link {
     border-left: 3px solid #3eaf7c !important;
 }
 
-
+//评论区
+.vedit {
+    padding: 2px 0px 0px !important;
+}
+.vrow {
+    padding: 4px 0px !important;
+}
+.v[data-class=v] .vinput{
+    padding: 7px 5px !important;
+}
+.v[data-class=v]{
+    font-size: 15px !important;
+}
+.valine-wrapper #valine.v .vwrap {
+    background: none !important;
+}
+.vcontent{
+    background: none !important;
+}
+.v[data-class=v] * {
+    line-height: 1.3 !important;
+}
+.v[data-class=v] .vwrap {
+    padding: 0px 10px !important;
+}
+.v[data-class=v] .vsys {
+    font-size: 0.5em !important;
+}

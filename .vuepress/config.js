@@ -13,14 +13,15 @@ module.exports = {
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       { text: '文档', 
-        icon: 'reco-message',
+        icon: 'reco-document',
         items: [
           { text: 'vuepress手册', link: '/docs/vuepress/' },
           { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-coding' }
         ]
       },
+      { text: '留言板', link: '/blogs/other/messageboard.md', icon: 'reco-suggestion' },
       { text: '关于', 
-        icon: 'reco-menu',
+        icon: 'reco-message',
         items: [
           { text: 'GitHub', link: 'https://github.com/HubCui', icon: 'reco-github' }
         ]
@@ -99,6 +100,12 @@ module.exports = {
     valineConfig: {
       appId: 'otJJhc55ebLXYnS0mbwCMNWc-gzGzoHsz',// your appId
       appKey: 'u7N63cPLce0li79HJPpYO45T', // your appKey
+      avatar:'wavatar',//头像风格
+      placeholder:'# 在昵称栏输入QQ号后自动获取QQ头像和邮箱。',//评论框占位提示符。
+      enableQQ: true,//是否自动获取QQ头像和邮箱
+      requiredFields: ['nick','mail'],//必填项
+      pageSize: '20',//每页显示评论数
+      showComment: false//是否默认显示评论栏
     }
   },
   markdown: {
