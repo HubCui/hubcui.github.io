@@ -1,5 +1,5 @@
 ---
-title: 留言板test
+title: 留言板
 isShowComments: true
 ---
 

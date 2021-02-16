@@ -7,7 +7,7 @@ tags:
  - Hexo
 ---
 >Hexo主题满足不了我们需要的样式的时候，候我们可以新建一个独立的页面，这个页面不使用主题的渲染，具有自己独立的样式，可以放一些自己的作品，相册之类的个性化页面，以下就介绍这种独立页面的实现方法。
-
+<!-- more -->
 ## 方法一：
 &emsp; &emsp; 使用 Hexo 提供的跳过渲染配置，在博客根目录的配置文件 `_config.yml` 里找到 `skip_render` 关键字，在后面添加想要跳过渲染的页面，比如我们创建 `\source\about\index.html`， 配置文件填写：`skip_render: about\**`，那么就表示 `\source\about` 里所有的文件将跳过渲染，里面的文件将会被直接复制到 `public` 文件夹，此时就会得到一个独立的 about 页面；官方文档：https://hexo.io/docs/configuration
 

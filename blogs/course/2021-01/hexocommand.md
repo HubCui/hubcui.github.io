@@ -7,6 +7,7 @@ tags:
  - Hexo
 ---
 >本文是个人总结经常用到的命令，全部命令可以移步: [手册](https://hexo.io/zh-cn/docs/commands) 查看。
+<!-- more -->
 ---
 ## 常用命令
 

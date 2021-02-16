@@ -1,31 +1,52 @@
 //标签样式
 .tags .tag-item{
-    display: inline-block !important;
-    position: relative !important;
-    vertical-align: middle !important;
-    min-width: 1.5em !important;
+    // display: inline-block !important;
+    // position: relative !important;
+    // vertical-align: middle !important;
+    // min-width: 1.5em !important;
+    // background: #efefef !important;
+    // font-size: 0.6em !important;
+    // text-align: center !important;
+    // overflow: hidden !important;
     margin: 0 0.8em !important;
     padding: 0 0.5em !important;
     border-width: 0.5px !important;
     border-style: solid !important;
     border-radius: 0.6em !important;
-    background: #f8f8f8 !important;
-    font-size: 0.6em !important;
-    text-align: center !important;
-    overflow: hidden !important;
     transition: all .2s !important;
 }
-.iconfont{
+.iconfont span{
     display: inline-block !important;
     line-height: 1rem !important;
-    font-size: 13px !important;
+    font-size: 12px !important;
+}
+.abstract-item i.iconfont.reco-account:before{
+    font-size: 11px !important;
+}
+.abstract-item i.iconfont.reco-date:before{
+    font-size: 11px !important;
+}
+.abstract-item i.tags.iconfont.reco-tag.reco-tag:before {
+    font-size: 11px !important;
+}
+a.leancloud-visitors-count{
+    font-size: 12px !important;
+}
+// i.reco-eye:before{
+//     font-size: 11px !important;
+// }
+
+//文章列表描述样式
+.abstract blockquote{
+    border-left: none !important;
+    background-color: var(--background-color) !important;
 }
 
 // 侧边栏样式
 // 左侧侧边栏标题
 .sidebar > .sidebar-links > li > a.sidebar-link {
-  margin-left: -0.5em !important;
-  padding: 2px 16px 2px 36px !important;
+    margin-left: -0.5em !important;
+    padding: 2px 16px 2px 36px !important;
 }
 .sidebar > .sidebar-links > li > a.sidebar-link.active {
     font-size: 1.1em ;
@@ -46,6 +67,25 @@ a.sidebar-link {
     border-left: 3px solid #3eaf7c !important;
 }
 
+//h2 h3 h4 h5 h6标题
+.content__default:not(.custom) > h2{
+    margin-top: 2rem !important;
+    padding-top: 0rem !important;
+
+}
+.content__default:not(.custom) > h3, .content__default:not(.custom) > h4, .content__default:not(.custom) > h5, .content__default:not(.custom) > h6{
+    // border-left: 0.2rem solid #999 !important;
+    margin-top: 1.5rem !important;
+    padding-top: 0rem !important;
+}
+//代码块
+.content__default pre, .content__default pre[class*="language-"]{
+    padding: 0.8rem 3.5rem !important;
+}
+div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
+    padding: 0.8rem 0 !important;
+}
+
 //评论区
 .vedit {
     padding: 2px 0px 0px !important;
@@ -54,7 +94,7 @@ a.sidebar-link {
     padding: 4px 0px !important;
 }
 .v[data-class=v] .vinput{
-    padding: 7px 5px !important;
+    padding: 8px 5px !important;
 }
 .v[data-class=v]{
     font-size: 15px !important;
@@ -70,7 +110,19 @@ a.sidebar-link {
 }
 .v[data-class=v] .vwrap {
     padding: 0px 10px !important;
+    box-shadow: var(--box-shadow);
 }
 .v[data-class=v] .vsys {
-    font-size: 0.5em !important;
+    line-height: 1em !important;
+    font-size: 0.7em !important;
+    border-radius: 0.3em !important;
+}
+.v[data-class=v] .vcards .vcard{
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    padding: 15px;
+    margin-top: 1rem;
+}
+.vquote  .vcard{
+    box-shadow: none !important;
 }

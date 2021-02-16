@@ -1,11 +1,16 @@
 module.exports = {
   title: "HubCui's Blog",
-  description: 'loading...',
+  description: 'HubCui的技术博客，专注于分享各种干货知识，同时分享个人项目、技术文章等...',
   dest: './public',//默认在vuepress目录下
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
+  markdown: {
+    lineNumbers: true,//代码块行号
+    externalLinks: 
+    { target: '_blank', rel: 'nofollow noopener noreferrer' }//外部链接加上nofollow
+  },
   theme: 'reco',
   // permalink: "/:regular",//永久链接
   themeConfig: {
@@ -19,6 +24,12 @@ module.exports = {
           { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-coding' }
         ]
       },
+      { text: '项目', 
+        icon: 'reco-api',
+        items: [
+          { text: 'EVE市场', link: '/item/article/' },
+        ]
+      },
       { text: '留言板', link: '/blogs/other/messageboard.md', icon: 'reco-suggestion' },
       { text: '关于', 
         icon: 'reco-message',
@@ -29,6 +40,12 @@ module.exports = {
     ],
     sidebar: {//侧边栏手动设置
       '/docs/vuepress/': [
+        '',
+        'theme',
+        'plugin',
+        'api'
+      ],
+      '/item/article/': [
         '',
         'theme',
         'plugin',
