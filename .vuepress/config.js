@@ -17,17 +17,17 @@ module.exports = {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
+      { text: '项目', 
+        icon: 'reco-api',
+        items: [
+          { text: 'EVE市场', link: '/item/article/' },
+        ]
+      },
       { text: '文档', 
         icon: 'reco-document',
         items: [
           { text: 'vuepress手册', link: '/docs/vuepress/' },
           { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-coding' }
-        ]
-      },
-      { text: '项目', 
-        icon: 'reco-api',
-        items: [
-          { text: 'EVE市场', link: '/item/article/' },
         ]
       },
       { text: '留言板', link: '/blogs/other/messageboard.md', icon: 'reco-suggestion' },

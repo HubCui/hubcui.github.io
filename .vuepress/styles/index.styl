@@ -1,13 +1,11 @@
+body {
+    font-family: Ubuntu, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px !important;
+}
 //标签样式
 .tags .tag-item{
-    // display: inline-block !important;
-    // position: relative !important;
-    // vertical-align: middle !important;
-    // min-width: 1.5em !important;
-    // background: #efefef !important;
-    // font-size: 0.6em !important;
-    // text-align: center !important;
-    // overflow: hidden !important;
     margin: 0 0.8em !important;
     padding: 0 0.5em !important;
     border-width: 0.5px !important;
@@ -56,9 +54,6 @@ a.leancloud-visitors-count{
 // 右侧文章标题导航栏
 a.sidebar-link {
     line-height: 1.6 !important;
-}
-.level-2 a.sidebar-link {
-    font-weight:bold !important;
 }
 .sub-sidebar-wrapper li a{
     padding: 0.1rem 0 !important;
@@ -123,6 +118,9 @@ div[class*="language-"].line-numbers-mode .line-numbers-wrapper{
     padding: 15px;
     margin-top: 1rem;
 }
-.vquote  .vcard{
+.vquote .vcard{
     box-shadow: none !important;
+}
+.valine-wrapper #valine.v .vwrap .vheader .vinput {
+    border-bottom: 2px dashed var(--border-color) !important;
 }
