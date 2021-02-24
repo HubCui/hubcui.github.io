@@ -24,10 +24,11 @@ module.exports = {
         ]
       },
       { text: '文档', 
-        icon: 'reco-document',
+        icon: 'reco-blog',
         items: [
           { text: 'vuepress手册', link: '/docs/vuepress/' },
-          { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-coding' }
+          { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-document' }
+          { text: 'Python手册', link: 'https://docs.python.org/zh-cn/3/', icon: 'reco-document' }
         ]
       },
       { text: '留言板', link: '/blogs/other/messageboard.md', icon: 'reco-suggestion' },
