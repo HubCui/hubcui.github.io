@@ -22,7 +22,7 @@ Markdown 能被使用来撰写电子书，如：Gitbook。
 
 支持导出HTML、PDF、Word、图片等多种类型文件。
 
-[Typora官网](https://typora.io/ "Typora官网")
-
 ## 预览
 ![markdown预览](https://cdn.jsdelivr.net/gh/HubCui/CDN@main/blog/docs/markdown/md.png "markdown预览")
+
+[Typora官网](https://typora.io/ "Typora官网")
