@@ -6,7 +6,7 @@ yarn run build
 
 # 进入生成的文件夹
 cd public
-echo 'hubcui.com' > CNAME
+echo 'blog.hubcui.com' > CNAME
 # 如果是发布到自定义域名
 # echo 'www.yourwebsite.com' > CNAME
 

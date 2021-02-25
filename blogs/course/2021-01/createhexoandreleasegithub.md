@@ -2,7 +2,7 @@
 title: 如何搭建Hexo博客并发布到GitHub
 date: 2021-01-21 22:01:48
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---

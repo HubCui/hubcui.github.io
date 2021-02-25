@@ -2,7 +2,7 @@
 title: 使用vuepress-reco主题快速构建博客
 date: 2021-02-07 20:59:53
 categories: 
- - Course
+ - Build blog
 tags: 
  - Vuepress
 ---

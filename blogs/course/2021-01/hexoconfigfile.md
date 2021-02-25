@@ -2,7 +2,7 @@
 title: Hexo配置文件详解
 date: 2021-01-30 23:02:15
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---

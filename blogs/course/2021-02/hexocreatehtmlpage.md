@@ -2,7 +2,7 @@
 title: 为Hexo创建独立的html页面
 date: 2021-02-01 17:21:46
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---

@@ -2,7 +2,7 @@
 title: Hexo常用命令
 date: 2021-01-21 23:02:38
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---

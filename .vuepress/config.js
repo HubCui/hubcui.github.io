@@ -16,18 +16,13 @@ module.exports = {
   themeConfig: {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
+      { text: '博客', link: '/', icon: 'reco-blog' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-      { text: '项目', 
-        icon: 'reco-api',
-        items: [
-          { text: 'EVE市场', link: '/item/article/' },
-        ]
-      },
       { text: '文档', 
-        icon: 'reco-blog',
+        icon: 'reco-document',
         items: [
-          { text: 'vuepress手册', link: '/docs/vuepress/' },
-          { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-document' }
+          { text: 'Markdown语法', link: '/docs/markdown/', icon: 'reco-document'},
+          { text: '正则表达式手册', link: 'https://tool.oschina.net/uploads/apidocs/jquery/regexp.html', icon: 'reco-document' },
           { text: 'Python手册', link: 'https://docs.python.org/zh-cn/3/', icon: 'reco-document' }
         ]
       },
@@ -40,28 +35,21 @@ module.exports = {
       }
     ],
     sidebar: {//侧边栏手动设置
-      '/docs/vuepress/': [
+      '/docs/markdown/': [
         '',
-        'theme',
-        'plugin',
-        'api'
+        'basic',
+        'advanced',
       ],
-      '/item/article/': [
-        '',
-        'theme',
-        'plugin',
-        'api'
-      ]
     },  
     type: 'blog',
     // 博客设置
     blogConfig: {
       category: {
-        location: 2, // 在导航栏菜单中所占的位置，默认2
+        location: 3, // 在导航栏菜单中所占的位置，默认2
         text: '分类' // 默认 “分类”
       },
       tag: {
-        location: 3, // 在导航栏菜单中所占的位置，默认3
+        location: 4, // 在导航栏菜单中所占的位置，默认3
         text: '标签' // 默认 “标签”
       }
     },

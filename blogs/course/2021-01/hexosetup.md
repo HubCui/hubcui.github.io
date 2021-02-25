@@ -2,7 +2,7 @@
 title: Hexo高级设置
 date: 2021-01-30 22:35:07
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---

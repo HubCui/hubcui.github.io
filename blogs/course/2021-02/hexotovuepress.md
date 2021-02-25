@@ -2,7 +2,7 @@
 title: 我为什么从Hexo换到Vuepress
 date: 2021-02-05 16:41:36
 categories: 
- - Course
+ - Build blog
 tags: 
  - Vuepress
 ---

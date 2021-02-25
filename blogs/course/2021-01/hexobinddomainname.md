@@ -2,7 +2,7 @@
 title: 给Hexo博客绑定个人域名
 date: 2021-01-22 12:25:51
 categories: 
- - Course
+ - Build blog
 tags: 
  - Hexo
 ---
